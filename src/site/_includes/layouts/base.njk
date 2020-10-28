@@ -10,6 +10,7 @@ ogimage: "/img/og/default-og-image.png"
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
     <title>{{ title }} | Jamstack</title>
     <meta name="description" content="{{ description }}">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
@@ -92,5 +93,14 @@ ogimage: "/img/og/default-og-image.png"
       </defs>
     </svg>
     <script type="module" src="/js/details-force-state.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: '0MYODKN936',
+        apiKey: '37cda1b50cf9713749b3409c85390d3e',
+        siteId: 'a1b6df18-0dc9-465b-84cb-ce58167346b1',
+        branch: 'main',
+      });
+    </script>
   </body>
 </html>
